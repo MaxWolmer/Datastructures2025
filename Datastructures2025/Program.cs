@@ -88,23 +88,72 @@ Console.WriteLine("Hello, World!");
 ////namesList =  new List<string>();
 ////namesList.Add("Peter");
 ///
-Pizza p1 = new Pizza(1, "Magheritha", "Tomat og ost", 135);
-Pizza p2 = new Pizza(2, "Vesuvio", "Tomat, ost, skinke", 120);
-List<Pizza> pizzas;
-pizzas = new List<Pizza>();
-pizzas.Add(p1);
-pizzas.Add(p2);
+//Pizza p1 = new Pizza(1, "Magheritha", "Tomat og ost", 135);
+//Pizza p2 = new Pizza(2, "Vesuvio", "Tomat, ost, skinke", 120);
+//List<Pizza> pizzas;
+//pizzas = new List<Pizza>();
+//pizzas.Add(p1);
+//pizzas.Add(p2);
 
-pizzas.Add(new Pizza(3, "Hawaii", "Tomas, os, Ananas og skinke", 159));
+//pizzas.Add(new Pizza(3, "Hawaii", "Tomas, os, Ananas og skinke", 159));
 
-foreach(Pizza pizzaElement in pizzas )
+//foreach(Pizza pizzaElement in pizzas )
+//{
+//    Console.WriteLine($"Number {pizzaElement.Number} name {pizzaElement.Name}");
+//}
+//double  sum = 0; 
+//foreach(Pizza p in pizzas)
+//{
+//    sum = sum + p.Price;
+//}
+//Console.WriteLine($"Den total sum er { sum}");
+
+////string searchDescription = "skinke";
+//int antalPizzaerMedSkinke = 0;
+//foreach(Pizza c in pizzas)
+//{
+//    if ( c.Description.Contains("skinke") )
+//    {
+//        antalPizzaerMedSkinke++;
+//    }
+//}
+//Console.WriteLine($"Antal pizzaer med skinke {antalPizzaerMedSkinke}");
+
+
+//BiCycleRepository bRepo = new BiCycleRepository();
+//bRepo.Add(new BiCycle(12, "Centurion", "2323232355"));
+//Console.WriteLine(bRepo.Count);
+//BiCycle b1 = new BiCycle(10, "Trek", "5454545455");
+//bRepo.Add(b1);
+//Console.WriteLine(bRepo.Count);
+//bRepo.Add(null);
+//Console.WriteLine(bRepo.Count);
+
+
+Dictionary<string, BiCycle> _bikes = new Dictionary<string, BiCycle>();
+
+BiCycle b1 = new BiCycle(10, "Trek", "5454545455");
+
+
+_bikes.Add(b1.SNO, b1);
+_bikes.Add("123", new BiCycle(12, "Trek", "123"));
+if (!_bikes.ContainsKey("124"))
+    _bikes.Add("124", new BiCycle(12, "Amigo", "124"));
+
+_bikes["125"] = new BiCycle(5, "Superduper", "125");
+
+Console.WriteLine(_bikes.Count);
+
+foreach (var bike in _bikes)
 {
-    Console.WriteLine($"Number {pizzaElement.Number} name {pizzaElement.Name}");
+    Console.WriteLine("Key:" + bike.Key);
+    Console.WriteLine("Value:" + bike.Value);
 }
-double  sum = 0; 
-foreach(Pizza p in pizzas)
+
+_bikes.Remove("127");
+foreach (BiCycle bike in _bikes.Values)
 {
-    sum = sum + p.Price;
+    Console.WriteLine(bike);
 }
-Console.WriteLine($"Den total sum er { sum}");
+
 
