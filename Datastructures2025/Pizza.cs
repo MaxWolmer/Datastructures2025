@@ -14,18 +14,20 @@ namespace Datastructures2025
 
         public double Price { get; set; }
 
+        public PizzaType ThePizzaType { get; set; }
 
-        public Pizza(int number, string name, string description, double price)
+        public Pizza(int number, string name, string description, double price, PizzaType thePizzaType)
         {
             Number = number;
             Name = name;
             Description = description;
-            Price = price; 
+            Price = price;
+            ThePizzaType = thePizzaType;
         }
 
         public override string ToString()
         {
-            return $"{Number} {Name} {Description} {Price} kr";
+            return $"{Number} {Name} {Description} {Price} kr type {ThePizzaType}";
         }
     }
 }

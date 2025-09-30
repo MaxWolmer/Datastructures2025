@@ -130,30 +130,54 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine(bRepo.Count);
 
 
-Dictionary<string, BiCycle> _bikes = new Dictionary<string, BiCycle>();
+//Dictionary<string, BiCycle> _bikes = new Dictionary<string, BiCycle>();
 
-BiCycle b1 = new BiCycle(10, "Trek", "5454545455");
-
-
-_bikes.Add(b1.SNO, b1);
-_bikes.Add("123", new BiCycle(12, "Trek", "123"));
-if (!_bikes.ContainsKey("124"))
-    _bikes.Add("124", new BiCycle(12, "Amigo", "124"));
-
-_bikes["125"] = new BiCycle(5, "Superduper", "125");
-
-Console.WriteLine(_bikes.Count);
-
-foreach (var bike in _bikes)
-{
-    Console.WriteLine("Key:" + bike.Key);
-    Console.WriteLine("Value:" + bike.Value);
-}
-
-_bikes.Remove("127");
-foreach (BiCycle bike in _bikes.Values)
-{
-    Console.WriteLine(bike);
-}
+//BiCycle b1 = new BiCycle(10, "Trek", "5454545455");
 
 
+//_bikes.Add(b1.SNO, b1);
+//_bikes.Add("123", new BiCycle(12, "Trek", "123"));
+//if (!_bikes.ContainsKey("124"))
+//    _bikes.Add("124", new BiCycle(12, "Amigo", "124"));
+
+//_bikes["125"] = new BiCycle(5, "Superduper", "125");
+
+//Console.WriteLine(_bikes.Count);
+
+//foreach (var bikeKVP in _bikes)
+//{
+//    Console.WriteLine("Key:" + bikeKVP.Key);
+//    Console.WriteLine("Value:" + bikeKVP.Value);
+//}
+
+//_bikes.Remove("127");
+//foreach (BiCycle bike in _bikes.Values)
+//{
+//    Console.WriteLine(bike);
+//}
+
+
+//HashSet<string> ssnColl = new HashSet<string>();
+//bool added = ssnColl.Add("02011987-1235");
+//bool isPresent = ssnColl.Contains("02011987-1235");
+
+
+//HashSet<string> names1 = ["Peter", "Annie", "Frank", "Linda", "Lukas"];
+//HashSet<string> names2 = ["Lukas", "Maria", "Martin", "Sofie", "Linda"];
+
+//names1.UnionWith((names2)); 
+//foreach(string name in names1)
+//{
+//    Console.WriteLine(name);
+//}
+
+//foreach (string ssn in ssnColl)
+//{
+//    Console.WriteLine(ssn);
+//}
+
+FruitType typeOfFruit = FruitType.Banana;
+Console.WriteLine(typeOfFruit);
+
+Pizza p1 = new Pizza(1, "Magheritha", "Tomat og ost", 135, PizzaType.Family);
+Console.WriteLine(p1);
