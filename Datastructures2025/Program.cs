@@ -176,8 +176,8 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine(ssn);
 //}
 
-FruitType typeOfFruit = FruitType.Banana;
-Console.WriteLine(typeOfFruit);
+//FruitType typeOfFruit = FruitType.Banana;
+//Console.WriteLine(typeOfFruit);
 
-Pizza p1 = new Pizza(1, "Magheritha", "Tomat og ost", 135, PizzaType.Family);
-Console.WriteLine(p1);
+//Pizza p1 = new Pizza(1, "Magheritha", "Tomat og ost", 135, PizzaType.Family);
+//Console.WriteLine(p1);

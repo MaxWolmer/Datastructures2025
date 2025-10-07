@@ -26,5 +26,27 @@ namespace Datastructures2025
                 _bicycles.Add(bicycle);
         }
 
+        public BiCycle? Search(string sno)
+        {
+            //foreach(BiCycle b in _bicycles)
+            //{
+            //    if (b.SNO== sno)
+            //    {
+            //        return b;
+            //    }
+            //}
+            //return null; 
+            for(int i =0;i<_bicycles.Count; i++)
+            {
+                if (_bicycles[i].SNO==sno)
+                {
+                    return _bicycles[i];
+                }
+            }
+            return null; 
+        }
+
+
+
     }
 }
