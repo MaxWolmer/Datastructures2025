@@ -181,3 +181,23 @@ Console.WriteLine("Hello, World!");
 
 //Pizza p1 = new Pizza(1, "Magheritha", "Tomat og ost", 135, PizzaType.Family);
 //Console.WriteLine(p1);
+
+
+//BiCycleRepository bRepo = new BiCycleRepository();
+//bRepo.Add(new BiCycle(12, "Centurion", "23"));
+////Console.WriteLine(bRepo.Count);
+//BiCycle b1 = new BiCycle(10, "Trek", "54");
+//bRepo.Add(b1);
+//bRepo.Remove("23");
+//Console.WriteLine(bRepo.Count);
+//bRepo.Add(null);
+//Console.WriteLine(bRepo.Count);
+
+
+IBiCycleRepository bRepo = new BiCycleRepoDictionary();
+bRepo.Add(new BiCycle(12, "Centurion", "23"));
+//Console.WriteLine(bRepo.Count);
+BiCycle b1 = new BiCycle(10, "Trek", "54");
+bRepo.Add(b1);
+//bRepo.Remove("23");
+Console.WriteLine(bRepo.Count);
