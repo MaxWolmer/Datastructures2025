@@ -70,5 +70,9 @@ namespace Datastructures2025
             Add(updatedBicycle);
         }
 
+        public void PrintAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -29,19 +29,39 @@ namespace Datastructures2025
             }
         }
 
+        public void PrintAll()
+        {
+            //foreach(var pair in _bikes)
+            //{
+            //    Console.WriteLine($" key {pair.Key} value {pair.Value} ");
+            //}
+            foreach(BiCycle b in _bikes.Values)
+            {
+                Console.WriteLine(b);
+            }
+        }
+
         public void Remove(string sno)
         {
-            throw new NotImplementedException();
+            _bikes.Remove(sno);
         }
 
         public BiCycle? Search(string sno)
         {
-            throw new NotImplementedException();
+            if (_bikes.ContainsKey(sno))
+            {
+                return _bikes[sno];
+            }
+            return null;
         }
 
         public void Update(BiCycle updatedBicycle)
         {
-            throw new NotImplementedException();
+            if (_bikes.ContainsKey(updatedBicycle.SNO))
+            {
+                _bikes[updatedBicycle.SNO] = updatedBicycle;
+            }
+            
         }
     }
 }

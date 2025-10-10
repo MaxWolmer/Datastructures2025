@@ -199,5 +199,6 @@ bRepo.Add(new BiCycle(12, "Centurion", "23"));
 //Console.WriteLine(bRepo.Count);
 BiCycle b1 = new BiCycle(10, "Trek", "54");
 bRepo.Add(b1);
-//bRepo.Remove("23");
+bRepo.Remove("23");
+bRepo.Update(new BiCycle(12, "Trek", "54"));
 Console.WriteLine(bRepo.Count);

@@ -8,5 +8,7 @@
         void Remove(string sno);
         BiCycle? Search(string sno);
         void Update(BiCycle updatedBicycle);
+
+        void PrintAll();
     }
 }
