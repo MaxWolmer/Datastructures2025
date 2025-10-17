@@ -8,7 +8,11 @@ namespace Datastructures2025
 {
     public class BiCycleRepoDictionary : IBiCycleRepository
     {
+<<<<<<< HEAD
         //Instance field
+=======
+        //instance field
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
         private Dictionary<string, BiCycle> _bikes;
 
         public BiCycleRepoDictionary()
@@ -18,9 +22,14 @@ namespace Datastructures2025
 
         public int Count
         {
+<<<<<<< HEAD
             get {return _bikes.Count; }
         } 
         //=> throw new NotImplementedException();
+=======
+            get { return _bikes.Count; }
+        }
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
 
         public void Add(BiCycle bicycle)
         {
@@ -32,6 +41,7 @@ namespace Datastructures2025
 
         public void PrintAll()
         {
+<<<<<<< HEAD
             foreach (var pair in _bikes)
             {
                 Console.WriteLine($"key {pair.Key} \nvalue {pair.Value} ");
@@ -41,6 +51,15 @@ namespace Datastructures2025
                 {
                     Console.WriteLine(b);
                 }
+=======
+            //foreach(var pair in _bikes)
+            //{
+            //    Console.WriteLine($" key {pair.Key} value {pair.Value} ");
+            //}
+            foreach(BiCycle b in _bikes.Values)
+            {
+                Console.WriteLine(b);
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
             }
         }
 
@@ -58,12 +77,20 @@ namespace Datastructures2025
             return null;
         }
 
+<<<<<<< HEAD
         public void Update(string sno, BiCycle updatedBicycle)
+=======
+        public void Update(BiCycle updatedBicycle)
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
         {
             if (_bikes.ContainsKey(updatedBicycle.SNO))
             {
                 _bikes[updatedBicycle.SNO] = updatedBicycle;
             }
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
         }
     }
 }

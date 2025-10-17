@@ -22,6 +22,7 @@ namespace Datastructures2025
 
         public void Add(BiCycle bicycle)
         {
+<<<<<<< HEAD
             foreach (BiCycle b in _bicycles)
             {
                 if (bicycle.SNO == b.SNO)
@@ -31,6 +32,18 @@ namespace Datastructures2025
             }
             //if (bicycle != null && Search(bicycle.SNO == null))
             _bicycles.Add(bicycle);
+=======
+            //foreach(BiCycle b in _bicycles)
+            //{
+            //    if (bicycle.SNO == b.SNO)
+            //    {
+            //        return;
+            //    }
+            //}
+
+            if (bicycle != null && Search(bicycle.SNO) == null)
+                _bicycles.Add(bicycle);
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
         }
 
         public BiCycle? Search(string sno)
@@ -60,6 +73,7 @@ namespace Datastructures2025
             {
                 _bicycles.Remove(bToBeRemoved);
             }
+<<<<<<< HEAD
         }
 
         public void Update(string sno, BiCycle updatedBicycle)
@@ -68,6 +82,17 @@ namespace Datastructures2025
             Add(updatedBicycle);
         }
 
+=======
+
+        }
+
+        public void Update(BiCycle updatedBicycle)
+        {
+            Remove(updatedBicycle.SNO);
+            Add(updatedBicycle);
+        }
+
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
         public void PrintAll()
         {
             throw new NotImplementedException();

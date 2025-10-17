@@ -175,8 +175,11 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine(p1);
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
 //BiCycleRepository bRepo = new BiCycleRepository();
 //bRepo.Add(new BiCycle(12, "Centurion", "23"));
 ////Console.WriteLine(bRepo.Count);
@@ -187,12 +190,21 @@ Console.WriteLine("Hello, World!");
 //bRepo.Add(null);
 //Console.WriteLine(bRepo.Count);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
 IBiCycleRepository bRepo = new BiCycleRepoDictionary();
 bRepo.Add(new BiCycle(12, "Centurion", "23"));
 //Console.WriteLine(bRepo.Count);
 BiCycle b1 = new BiCycle(10, "Trek", "54");
 bRepo.Add(b1);
+<<<<<<< HEAD
 //bRepo.Remove("23");
 Console.WriteLine(bRepo.Count);
 bRepo.Update(new BiCycle(10, "Trek", "54"));
+=======
+bRepo.Remove("23");
+bRepo.Update(new BiCycle(12, "Trek", "54"));
+>>>>>>> 6a8d0e3f42e4741c8ca6ddb66c3fdc3450579d71
 Console.WriteLine(bRepo.Count);
